@@ -1,0 +1,91 @@
+/** 1 REM = 10px **/
+html{
+    box-sizing:border-box;
+    font-size:62.5%;
+    font-family: 'Open Sans', sans-serif;
+    padding: 8rem;
+}
+*, *:before, *:after{
+    box-sizing:inherit;
+}
+img{
+    max-width:100%;
+    display:block;
+    height: auto;
+}
+
+.input{
+    border: none;
+    background-color: rgb(240, 240, 240);
+    padding: 1rem;
+    width: 90%;
+    border-radius: 10px;
+    font-size: 1.3rem;
+    font-weight: 400;
+    margin: 0 auto;
+}
+
+h1{
+    text-align: center;
+    font-size: 3rem;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+form{
+    text-align: center;
+}
+hr{
+    width: 90%;
+    color: #012E40;
+}
+
+.contenido-principal{
+    max-width: 120rem;
+    margin: 0 auto;
+   
+}
+
+.imagen-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    padding: 4rem;
+    gap: 2rem;
+    background-color: #F2F2F2;
+    border-radius: 20px;
+}
+.loading {
+    font-size: 2rem;
+    color:#012E40; 
+    font-weight: 700;
+    animation: scaleDown 4s infinite;
+    text-align: center;
+}
+
+@keyframes scaleDown {
+    0%{transform:scale(1.4)}
+    25%{transform:scale(1)}
+    50%{transform:scale(1.4)}
+    75%{transform:scale(1)}
+    100%{transform:scale(1.4)}
+
+}
+.grid-imagen{ 
+    width: 100%;
+    height: 15rem;
+    object-fit: cover;
+}
+
+.grid-item p {
+    font-size: 1.2rem;
+    color: #fff;
+    font-weight: 700;
+    background-color: #012E40;
+    padding: 1rem;
+    margin:0
+}
+
+h2{
+    font-size: 2rem;
+    text-transform: uppercase;
+    color: #012E40;
+}
